@@ -19,4 +19,4 @@ server.on('request', (request, response) => {
     } else {
         response.end(fs.readFileSync(__dirname + '/src/index.html', 'utf-8'));    
     }
-}).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(80);
+}).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(process.env.PORT || 5000);
