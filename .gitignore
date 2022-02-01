@@ -1,0 +1,5 @@
+package-lock.json
+package_lock.json
+# idk which ones right, i use yarn BTW
+yarn.lock
+node_modules/
